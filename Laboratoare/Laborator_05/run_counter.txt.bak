@@ -1,8 +1,8 @@
 # add all Verilog source files, separated by spaces
-set sourcefiles {fac.v}
+set sourcefiles {counter.v}
 
 # set name of the top module
-set topmodule fac_tb
+set topmodule tb_counter
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####
@@ -24,6 +24,5 @@ if [catch "eval vlog $sourcefiles"] {
 
 vsim -voptargs=+acc $topmodule
 
-add wave *
 run -all
-#quit -sim
+quit -sim

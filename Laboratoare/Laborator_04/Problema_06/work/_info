@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/daria/Documents/GitHub/Faculta/Anul 2/Arhitectura-calculatoarelor-AC-/Laboratoare/Laborator_04/Problema_06
 vadd2b
-Z1 !s110 1729347203
+Z1 !s110 1729487797
 !i10b 1
 !s100 4f<3`>Q8:86je6oWn]>3O1
 IAYgCJ06;7^ZNnX_k]V`GZ2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1729347203.000000
+Z7 !s108 1729487797.000000
 Z8 !s107 c1_add4b.v|add2b.v|fac.v|
 Z9 !s90 -reportprogress|300|fac.v|add2b.v|c1_add4b.v|
 !i113 1
