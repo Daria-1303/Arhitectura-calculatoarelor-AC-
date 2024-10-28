@@ -37,7 +37,7 @@ mux_2s #(.width(width)) uut (
         .d3(d3),
         .s(s),
         .o(o)
-); 
+);
 
 initial begin 
 	d0 = 4'b0001;

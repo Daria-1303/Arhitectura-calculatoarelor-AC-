@@ -40,7 +40,7 @@ mux_2s #(.width(width)) uut (
 ); 
 
 initial begin 
-	d0 = 4'b0000;
+	d0 = 4'b0001;
 	d1 = 4'b0010;
 	d2 = 4'b0100;
 	d3 = 4'b1000;
