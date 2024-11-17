@@ -1,0 +1,12 @@
+module regfl#(
+	parameter reg_w=64,
+	parameter reg_cnt=8,
+	parameter dec_w=3
+)(
+	input clk,
+	input rst_b,
+	input we,
+	input [dec_w-1:0] s,
+	input [reg_w-1:0] d,
+	output [reg_cnt*reg_w-1:0] q
+);

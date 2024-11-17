@@ -2,7 +2,7 @@
 set sourcefiles {pktmux.v}
 
 # set name of the top module
-set topmodule pktmux_tb
+set topmodule pkmux_tb
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####

@@ -1,27 +1,25 @@
-module pktmux#(
-	parameter w = 64; //lungimea pachetului
+module pktmux #(
+    parameter w=64
 )(
-	input wire [w - 1: 0] pkt, //pachet
-	input wire msg_len,
-	input wire pad_pkt,//activa daca pachetul curent este de tip extensie
-	input wire zero_pkt,//activa daca pachetul curent este de tip zero
-	input wire mgln_pkt,//activa daca pachetul curent ale lungimea mesajului ~l
-	output ref [w - 1: 0] o
+    input wire [w - 1: 0] pkt, //pachet
+    input wire [w - 1: 0] msg_len, //lungimea mesajului pe w bi?i
+    input wire pad_pkt, //activa dac? pachetul curent este de tip extensie
+    input wire zero_pkt, //activa dac? pachetul curent este de tip zero
+    input wire mgln_pkt, //activa dac? pachetul curent are lungimea mesajului
+    output reg [w - 1: 0] o //ie?irea multiplexorului
 );
 
-reg [w - 1 : 0] zero = 0; 
-reg [w - 1 : 0] pad = ~0 << (w - 1); //lasam ultimul bit de 0
+reg [w-1:0] zero = 0;
+reg [w-1:0] pad = ~0 << (w-1);
 
 always @(*) begin
-	if(pad_pkt) 
-		o = pad;
-	else if(zero_pkt)
-		o = zero;
-	else if(mgln_pkt)
-		o = msg_len;
-	else
-		o =  pkt;
+    if (pad_pkt) o = pad;
+    else if (zero_pkt) o = zero;
+    else if (mgln_pkt) o = msg_len;
+    else o = pkt;
 end
+
+endmodule
 
 module pktmux_tb;
 

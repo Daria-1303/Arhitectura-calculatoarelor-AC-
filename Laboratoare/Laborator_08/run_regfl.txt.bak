@@ -1,8 +1,8 @@
 # add all Verilog source files, separated by spaces
-set sourcefiles {pktmux.v}
+set sourcefiles {regfl.v}
 
 # set name of the top module
-set topmodule pktmux_tb
+set topmodule regfl_tb
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####
