@@ -1,4 +1,4 @@
-module regfl#(
+module regfl64#(
 	parameter reg_w=64,
 	parameter reg_cnt=8,
 	parameter dec_w=3
@@ -26,7 +26,7 @@ generate
 genvar i;
 
 for (i = 0; i < reg_cnt; i = i + 1) begin: reg_inst
-	rgst #(.w(reg_w)) reg_inst(
+	rgst64 #(.w(reg_w)) reg_inst(
 		.clk(clk),
 		.clr(1'b0),
 		.rst_b(rst_b),
