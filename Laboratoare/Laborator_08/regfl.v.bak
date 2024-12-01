@@ -1,4 +1,3 @@
-
 module regfl(
 	input clk,
 	input rst_b,
@@ -9,7 +8,7 @@ module regfl(
 );
 
 wire [7:0] o;
-wire [63:0] data [7:0]; // 8 linii de semnal, fiecare având o l??ime de 64 de biti -> stocheaza iesirile celor 8 registre individuale
+wire [63:0] data [7:0]; // 8 linii de semnal, fiecare avand latime de 64 de biti -> stocheaza iesirile celor 8 registre individuale
 
 //instanta decodificator
 

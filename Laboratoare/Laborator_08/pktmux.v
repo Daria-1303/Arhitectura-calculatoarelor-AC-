@@ -3,10 +3,10 @@ module pktmux #(
 )(
     input wire [w - 1: 0] pkt, //pachet
     input wire [w - 1: 0] msg_len, //lungimea mesajului pe w bi?i
-    input wire pad_pkt, //activa dac? pachetul curent este de tip extensie
-    input wire zero_pkt, //activa dac? pachetul curent este de tip zero
-    input wire mgln_pkt, //activa dac? pachetul curent are lungimea mesajului
-    output reg [w - 1: 0] o //ie?irea multiplexorului
+    input wire pad_pkt, //activa daca pachetul curent este de tip extensie
+    input wire zero_pkt, //activa daca pachetul curent este de tip zero
+    input wire mgln_pkt, //activa daca pachetul curent are lungimea mesajului
+    output reg [w - 1: 0] o //iesirea multiplexorului
 );
 
 reg [w-1:0] zero = 0;

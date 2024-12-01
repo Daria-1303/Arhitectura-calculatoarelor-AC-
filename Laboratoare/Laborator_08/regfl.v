@@ -8,7 +8,7 @@ module regfl(
 );
 
 wire [7:0] o;
-wire [63:0] data [7:0]; // 8 linii de semnal, fiecare având o l??ime de 64 de biti -> stocheaza iesirile celor 8 registre individuale
+wire [63:0] data [7:0]; // 8 linii de semnal, fiecare avand latime de 64 de biti -> stocheaza iesirile celor 8 registre individuale
 
 //instanta decodificator
 
@@ -24,7 +24,8 @@ dec #(
 generate
 	genvar i;
 
-	for (i = 0; i < 8; i = i + 1) begin: reg_inst
+	for (i = 0; i < 8; i = i + 1) begin: re
+g_inst
 		rgst #(.w(64)) reg_inst(
 			.clk(clk),
 			.clr(1'b0),
