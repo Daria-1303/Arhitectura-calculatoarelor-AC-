@@ -19,7 +19,7 @@ module sadd(
     z = 0;
     case (st)
       S0: if (x ^ y)    z = 1;
-      S1: if (x ~^ y)   z = 1;
+      S1: if (x ~^ y)   z = 1; 
     endcase
   end
   always @ (posedge clk, negedge rst_b)
