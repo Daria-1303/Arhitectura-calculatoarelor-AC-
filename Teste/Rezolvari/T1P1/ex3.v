@@ -17,10 +17,12 @@ always @(posedge clk, negedge rst_b) begin
     else if(ld)
         data_out <= data_in;    // incarcare sincrona
     else if(sh)     // daca facem shift, trebuie sa verificam ce tip de shiftare facem
-        if (sh_type)
-                data_out <= {data_out[w-1], data_out[w-1:1]}; // Shiftare aritmetică
-            else
-                data_out <= {1'b0, data_out[w-1:1]}; // Shiftare logică
+        case(sh_type)
+            1'b0: 
+                data_out <= {1'b0, data_out[w - 1 : 1]}; // shiftare logica
+            1'b1: 
+                data_out <= {data_out[w - 1], data_out[w - 1 : 1]}; // shiftare aritmetica
+        endcase
 end 
 
 endmodule
