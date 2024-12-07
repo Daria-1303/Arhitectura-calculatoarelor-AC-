@@ -4,6 +4,7 @@ module prod(
   output reg [7:0] data
 );
   integer cntv, cntiv;
+  
   always @ (posedge clk, negedge rst_b)
     if (rst_b == 0) begin
       val<=0;

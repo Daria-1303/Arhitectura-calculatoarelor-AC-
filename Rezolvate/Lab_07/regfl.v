@@ -22,19 +22,23 @@ module regfl_tb;
   wire [511:0] q;
   
   regfl inst1(.clk(clk),.rst_b(rst_b),.we(we),.s(s),.d(d),.q(q));
+
   localparam CLK_PERIOD=100;
   localparam RUNNING_CYCLES=13;
+
   initial begin
     $display("time\tclk\trst_b\ts\twe\td\t\t\t\tq");
     $monitor("%4t\t%b\t%b\t%h\t%b\t%h\t%h",$time,clk,rst_b,s,we,d,q);
     clk=0;
     repeat (2*RUNNING_CYCLES) #(CLK_PERIOD/2) clk=~clk;
   end
+
   localparam RST_DURATION=25;
   initial begin
     rst_b=0;
     #RST_DURATION rst_b=1;
   end
+
   initial begin
     we=1;
     #(6*CLK_PERIOD) we=~we;
@@ -45,6 +49,7 @@ module regfl_tb;
     repeat (12)
       #(1*CLK_PERIOD) s=$urandom();
   end
+  
   task urand64(output reg [63:0] r);
     begin
       r[63:32]=$urandom();
