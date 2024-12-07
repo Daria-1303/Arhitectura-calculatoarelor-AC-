@@ -53,26 +53,26 @@ end
 initial begin
     bit = 0;
     #(CLK_PERIOD) bit = 1;
-    #(2 * CLK_PERIOD) bit = 0;
-    #(CLK_PERIOD) bit = 1;
+    #(CLK_PERIOD) bit = 0;
+    #(2 * CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;
     #(CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;
     #(CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;  
     #(CLK_PERIOD) bit = 1;
-    #(2 * CLK_PERIOD) bit = 0;
-    #(CLK_PERIOD) bit = 1;
+    #(CLK_PERIOD) bit = 0;
+    #(2 * CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;
     #(CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;
-    #(CLK_PERIOD) bit = 1;
-    #(2 * CLK_PERIOD) bit = 0;
-    #(CLK_PERIOD) bit = 1;
-    #(2 * CLK_PERIOD) bit = 0;
     #(CLK_PERIOD) bit = 1;
     #(CLK_PERIOD) bit = 0;
     #(2 * CLK_PERIOD) bit = 1;
+    #(CLK_PERIOD) bit = 0;
+    #(2 * CLK_PERIOD) bit = 1;
+    #(CLK_PERIOD) bit = 0;
+    #(CLK_PERIOD) bit = 1;
     #(2 * CLK_PERIOD) bit = 0;
     #(2 * CLK_PERIOD) bit = 1;
 end
