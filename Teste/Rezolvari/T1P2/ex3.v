@@ -8,14 +8,14 @@ module ex3 #(
     // prioritar rst_b > sh > ld
     input [w - 1 : 0] data_in, // datele de incarcat
     output reg [w - 1 : 0] data_out,
-    output reg [w - 1 : 0] b_out
+    output reg b_out
 );
 
 always @(posedge clk or negedge rst_b) begin
     if (!rst_b) begin
         // Reset: Clear data_out and set b_out to high-impedance
         data_out <= 0;
-        b_out <= {w{1'bz}};
+        b_out <= 1'bz;
     end else if (sh) begin
         // Right shift: Save lost bit in b_out
         b_out <= data_out[0];
@@ -23,7 +23,7 @@ always @(posedge clk or negedge rst_b) begin
     end else if (ld) begin
         // Load: Set data_out to data_in and b_out to high-impedance
         data_out <= data_in;
-        b_out <= {w{1'bz}};
+        b_out <= 1'bz;
     end
 end
 
@@ -37,7 +37,7 @@ reg sh;
 reg ld;
 reg [7:0] data_in;
 wire [7:0] data_out;
-wire [7:0] b_out;
+wire b_out;
 
 // Instantiate the DUT
 ex3 #(
