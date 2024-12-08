@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/daria/Documents/GitHub/Faculta/Anul 2/Arhitectura-calculatoarelor-AC-/Teste/Rezolvari/T2P1
-vex2
-Z1 !s110 1733689912
+vex4
+Z1 !s110 1733691260
 !i10b 1
-!s100 =f1W?2kd9E^cf7Be]j@5Q2
-I>^Df@@E@CFe<QM8?OW8NH0
+!s100 5T`Ek764laeX>5@Ph]EKQ1
+IzZk;<N4V7OX@5JDP=OjCO2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1733689886
-Z4 8ex2.v
-Z5 Fex2.v
-L0 1
+Z3 w1733691252
+Z4 8ex4.v
+Z5 Fex4.v
+L0 17
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1733689912.000000
-Z8 !s107 ex2.v|sum_1digit_BCD.v|
-Z9 !s90 -reportprogress|300|sum_1digit_BCD.v|ex2.v|
+Z7 !s108 1733691260.000000
+Z8 !s107 ex4.v|
+Z9 !s90 -reportprogress|300|ex4.v|
 !i113 1
 Z10 tCvgOpt 0
-vex2_tb
+vex4_tb
 R1
 !i10b 1
-!s100 V9SVaDXX0XCW?IooFKLFF3
-I^SLm^RF2JUijoLa1?Hene1
+!s100 XXH[5fW8BD8KOcDU:VjSA0
+II;[_acC4NHzGBAz9=>Yci3
 R2
 R0
 R3
 R4
 R5
-L0 35
+L0 61
 R6
 r1
 !s85 0
@@ -48,16 +48,16 @@ R8
 R9
 !i113 1
 R10
-vsum_1digit_BCD
+vrca_4bit
 R1
 !i10b 1
-!s100 ;[3=ZE:ic>Vl7G;9110581
-I`OO:0MMfoGjH6C^hodA?]0
+!s100 n[jUW]V`@<B>1ImlSd9961
+I=UaDjfTbP3]M[NaVVcfj:3
 R2
 R0
-w1733688909
-8sum_1digit_BCD.v
-Fsum_1digit_BCD.v
+R3
+R4
+R5
 L0 1
 R6
 r1
@@ -68,4 +68,3 @@ R8
 R9
 !i113 1
 R10
-nsum_1digit_@b@c@d
