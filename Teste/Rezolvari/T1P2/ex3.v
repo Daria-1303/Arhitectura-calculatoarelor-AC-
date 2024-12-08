@@ -27,3 +27,62 @@ always @(posedge clk, negedge rst_b)
         end
     end
 endmodule
+
+module ex3_tb;
+
+reg clk;
+reg rst_b;
+reg sh;
+reg ld;
+// reg sh_type;
+reg [7:0] data_in;
+wire [7:0] data_out;
+wire [7 : 0]b_out;
+
+ex3 #(
+    .w(8)        // Număr de biți
+) uut (
+    .clk(clk),
+    .rst_b(rst_b),
+    .sh(sh),
+    .ld(ld),
+    //    .sh_type(sh_type),
+    .data_in(data_in),
+    .data_out(data_out),
+    .b_out(b_out)
+);
+
+// Generare semnal de ceas
+always #5 clk = ~clk;
+
+initial begin
+    clk = 0; rst_b = 0; sh = 0; ld = 0; data_in = 8'b0;
+
+    $display("Time | rst_b | ld | sh | data_in | data_out | b_out");
+    $monitor("%4t |   %b   | %b  | %b  |  %b   |   %b    |   %b", 
+             $time, rst_b, ld, sh, data_in, data_out, b_out);
+
+    // Test 1: Reset
+    #10 rst_b = 1; // Scoatem resetul
+    #10 rst_b = 0; // Aplicăm resetul
+    #10 rst_b = 1; // Scoatem resetul din nou
+
+    // Test 2: Încărcare sincronă
+    #10 ld = 1; data_in = 8'b10101010;
+    #10 ld = 0;
+
+    // Test 3: Shiftare logică la dreapta
+    #10 sh = 1;
+    #10 sh = 0;
+
+    // Test 4: Shiftare aritmetică la dreapta
+    #10 sh = 1;
+    #10 sh = 0;
+
+    // Test 5: Comportament normal fără schimbări
+    #10;
+
+    $stop;
+end
+
+endmodule
