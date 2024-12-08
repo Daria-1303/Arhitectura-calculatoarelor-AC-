@@ -23,7 +23,7 @@ localparam CLK_PERIOD = 100;
 localparam CLK_CYCLES = 4;
 
 initial begin
-    clk = 0;
+    clk = 1;
     (2 * CLK_CYCLES) #(CLK_PERIOD / 2) clk = ~clk;
 end
 
@@ -39,14 +39,18 @@ initial begin
     ld = 0;
     sh = 0;
     d = 16'hXXXX;
+
     #(CLK_PERIOD)   sh_in = 1;
                     ld = 1;
                     d = 16'hAB00;
+
     #(CLK_PERIOD / 2)   d = 16'h0000;
                         sh_in = 0;
                         sh = 1;
+
     #(CLK_PERIOD / 2)   d = 16'h1234;
                         ld = 0;
+                        
     #(CLK_PERIOD)   sh_in = 1;
                     sh = 0;
 end
