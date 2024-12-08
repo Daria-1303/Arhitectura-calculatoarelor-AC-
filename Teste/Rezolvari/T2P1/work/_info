@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/daria/Documents/GitHub/Faculta/Anul 2/Arhitectura-calculatoarelor-AC-/Teste/Rezolvari/T2P1
+vex1
+Z1 !s110 1733686656
+!i10b 1
+!s100 <Wg5>mZ22Q94AQnF97J[<2
+II`ODQ@EYAG;Z;0?h0[<En3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1733686651
+Z4 8ex1.v
+Z5 Fex1.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1733686656.000000
+Z8 !s107 ex1.v|
+Z9 !s90 -reportprogress|300|ex1.v|
+!i113 1
+Z10 tCvgOpt 0
+vex1_tb
+R1
+!i10b 1
+!s100 iePY02GPZflRMbWi@KO?a3
+Ie=mL[Cmg46Ml:SLZ2]ZTd0
+R2
+R0
+R3
+R4
+R5
+L0 106
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
