@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/daria/Documents/GitHub/Faculta/Anul 2/Arhitectura-calculatoarelor-AC-/Teste/2024/T1
-vex4
-Z1 !s110 1733778281
+vbcm
+Z1 !s110 1733826558
 !i10b 1
-!s100 NJ2BRi4R9cJD_n9<01Lka3
-IF`iD@dT=PQd9eVV3g<GUG2
+!s100 Ch;7ZE`;WEU@m=z^Y>6zP2
+I68EYP9f=g7KAI4DmFV]gH1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1733778277
-Z4 8ex4.v
-Z5 Fex4.v
-L0 1
+Z3 w1733826554
+Z4 8bcm.v
+Z5 Fbcm.v
+L0 3
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1733778281.000000
-Z8 !s107 ex4.v|
-Z9 !s90 -reportprogress|300|ex4.v|
+Z7 !s108 1733826558.000000
+Z8 !s107 bcm.v|
+Z9 !s90 -reportprogress|300|bcm.v|
 !i113 1
 Z10 tCvgOpt 0
-vex4_tb
+vbcm_tb
 R1
 !i10b 1
-!s100 620Z9oN3Z7zJEX5V0K5Uc0
-I6YRWS9`^jG;HgRz@kRimW2
+!s100 b5JnIJ9_<`@aa:0<oAMe70
+Id=GfOz5OJ?kzZ>J79WcGX2
 R2
 R0
 R3
 R4
 R5
-L0 62
+L0 36
 R6
 r1
 !s85 0
