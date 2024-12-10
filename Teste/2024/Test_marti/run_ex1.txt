@@ -1,8 +1,8 @@
 # add all Verilog source files, separated by spaces
-set sourcefiles {d_ff.v lss5b.v}
+set sourcefiles {ex1.v}
 
 # set name of the top module
-set topmodule lss5b_tb
+set topmodule ex1_tb
 
 ###################################################
 #####DO NOT MODIFY THE SCRIPT BELLOW THIS LINE#####
