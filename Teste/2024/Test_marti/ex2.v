@@ -112,7 +112,7 @@ reg b;
 wire m;
 wire n;
 
-ex1 ex1_inst(
+ex2 ex2_inst(
     .a(a),
     .b(b),
     .clk(clk),
